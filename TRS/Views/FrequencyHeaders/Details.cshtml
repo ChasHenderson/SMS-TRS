@@ -1,0 +1,162 @@
+﻿@model TRS.Models.FrequencyHeader
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FrequencyHeader</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VFPFreqhedrid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VFPFreqhedrid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Freqcode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Freqcode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Qty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Qty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAdded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateAdded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateChanged)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateChanged)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangedPrev)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangedPrev)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateChangedPrev)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateChangedPrev)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangedOld)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangedOld)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateChangedOld)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateChangedOld)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeletedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeletedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateDeleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateDeleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Validbynm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Validbynm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Validdttm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Validdttm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.validrecord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.validrecord)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

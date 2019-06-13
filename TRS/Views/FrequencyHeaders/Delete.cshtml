@@ -1,0 +1,168 @@
+﻿@model TRS.Models.FrequencyHeader
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>FrequencyHeader</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VFPFreqhedrid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VFPFreqhedrid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Freqcode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Freqcode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Qty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Qty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAdded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateAdded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateChanged)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateChanged)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangedPrev)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangedPrev)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateChangedPrev)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateChangedPrev)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangedOld)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangedOld)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateChangedOld)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateChangedOld)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeletedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeletedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateDeleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateDeleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Validbynm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Validbynm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Validdttm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Validdttm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.validrecord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.validrecord)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

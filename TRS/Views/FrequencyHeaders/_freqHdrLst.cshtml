@@ -1,0 +1,31 @@
+﻿@model IEnumerable<TRS.Models.FrequencyHeader>
+@{ 
+    //var grid = new WebGrid(Model, defaultSort: "Freqcode", rowsPerPage: 500);
+    WebGrid webGrid = new WebGrid(source: Model, defaultSort: "Freqcode", canPage: false, canSort: true, rowsPerPage: 500);
+}
+@*<div id="gvcFreqHdr" class="col-md-8 GridViewContainer">*@
+<div>
+    @webGrid.GetHtml(
+         tableStyle: "webgrid-table",
+         headerStyle: "webgrid-header",
+         footerStyle: "webgrid-footer",
+         alternatingRowStyle: "webgrid-alternating-row",
+         selectedRowStyle: "webgrid-selected-row",
+         rowStyle: "webgrid-row-style",
+         mode: WebGridPagerModes.All,
+         htmlAttributes: new { @id = "gvFreqHdr" },
+        columns:
+        webGrid.Columns(
+            webGrid.Column(columnName: "ID", header: "ID", format: @<span class="label">@item.ID</span>, style: "ID"),
+             webGrid.Column(columnName: "Freqcode", header: "Freq Code", format: @<span class="label">@item.Freqcode</span>, style: "Freqcode"),
+            webGrid.Column(columnName: "Qty", header: "Runs", format: @<span><span class="label">@item.Qty</span>
+                <input class="text" type="text" value="@item.Qty" style="display:none"/></span>, style: "Qty"),
+            webGrid.Column(columnName: "Description", header: "Description", format: @<span><span class="label">@item.Description</span>
+                <input class="text" type="text" value="@item.Description" style="display:none"/></span>, style: "Description px400"),
+            webGrid.Column(format:@<span class="link px100 colnowrap">
+                <a class="Edit" href="javascript:;">Edit</a>
+                <a class="Update" href="javascript:;" style="display:none">Update</a>
+                <a class="Cancel" href="javascript:;" style="display:none">Cancel</a>
+    </span>
+    )))
+</div>

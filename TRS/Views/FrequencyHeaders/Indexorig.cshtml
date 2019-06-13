@@ -1,0 +1,135 @@
+﻿@model IEnumerable<TRS.Models.FrequencyHeader>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.VFPFreqhedrid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Freqcode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AddedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateAdded)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateChanged)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangedPrev)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateChangedPrev)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangedOld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateChangedOld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeletedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateDeleted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Validbynm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Validdttm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.validrecord)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.VFPFreqhedrid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Freqcode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AddedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateAdded)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateChanged)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangedPrev)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateChangedPrev)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangedOld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateChangedOld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DeletedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateDeleted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Validbynm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Validdttm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.validrecord)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

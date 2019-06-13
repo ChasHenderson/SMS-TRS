@@ -1,0 +1,400 @@
+﻿@model TRS.Models.Driver
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Driver</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VFPDriverID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VFPDriverID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FrmCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FrmCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameFirst)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameFirst)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameLast)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameLast)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameMIddle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameMIddle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SocialSec)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SocialSec)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Company)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Company)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Position)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NormDisp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NormDisp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddressLn1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddressLn1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddressLn2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddressLn2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Zip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Zip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HomePhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HomePhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CellPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CellPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlternatePhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlternatePhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LicenseNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LicenseNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LicenseState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LicenseState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Licenseexpire)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Licenseexpire)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmploymentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmploymentDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TerminationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TerminationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Picture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Picture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhysicalExpire)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhysicalExpire)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BadgeType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BadgeType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BadgeExpire)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BadgeExpire)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BadgePendStat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BadgePendStat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAdded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateAdded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateChanged)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateChanged)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangedPrev)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangedPrev)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateChangedPrev)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateChangedPrev)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangedOld)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangedOld)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateChangedOld)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateChangedOld)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeletedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeletedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateDeleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateDeleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DriverType1.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DriverType1.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.licensetype1.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.licensetype1.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location1.VFPLocationid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location1.VFPLocationid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.state1.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.state1.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Terminal.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Terminal.Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

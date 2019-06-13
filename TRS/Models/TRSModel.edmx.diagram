@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8a97d85624aa40949f6fafa4987eba51" Name="Diagram1" ZoomLevel="100">
+        <EntityTypeShape EntityType="TRSModel.Driver" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.DriverNote" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.DriverType" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.FrequencyDetail" Width="1.5" PointX="8" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.FrequencyHeader" Width="1.5" PointX="5.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.licensetype" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.Location" Width="1.5" PointX="0.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.Security" Width="1.5" PointX="5.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.sms_Trips" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.state" Width="1.5" PointX="0.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.Terminal" Width="1.5" PointX="0.75" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.THoliday" Width="1.5" PointX="5.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.TripMaster" Width="1.5" PointX="2.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.User" Width="1.5" PointX="8" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.UserNote" Width="1.5" PointX="10.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.Schdl_gen" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.sms_schedule" Width="1.5" PointX="14.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.sms_stops" Width="1.5" PointX="10.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRSModel.TripDriver" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="TRSModel.FK_Driver_DriverType" ManuallyRouted="false" />
+        <AssociationConnector Association="TRSModel.FK_Driver_licensetype" ManuallyRouted="false" />
+        <AssociationConnector Association="TRSModel.FK_Driver_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="TRSModel.FK_Driver_state" ManuallyRouted="false" />
+        <AssociationConnector Association="TRSModel.FK_Driver_Terminal" ManuallyRouted="false" />
+        <AssociationConnector Association="TRSModel.FK_FrequencyDetail_FrequencyHeader" ManuallyRouted="false" />
+        <AssociationConnector Association="TRSModel.FK_FrequencyDetail_Holidays" ManuallyRouted="false" />
+        <AssociationConnector Association="TRSModel.FK_User_Security" ManuallyRouted="false" />
+        <AssociationConnector Association="TRSModel.FK_UserNotes_User1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
